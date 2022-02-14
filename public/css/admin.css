@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    margin: 0
+}
+a, a:hover{
+text-decoration: none;
+}
+.nav{
+    background-color: #0B2239;
+}
+.nav .container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .nav_links{
+    margin: 0;
+}
+.nav .nav_links > li{
+    margin-left: 30px;
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+}
+.nav .nav_links > li a{
+    color: #fff;
+    transition: opacity .3s;
+}
+.nav .nav_links li > a:hover{
+    opacity: .7
+}
+.nav .droplink{
+    position: relative;
+}
+.nav .dropmenu{
+    position: absolute;
+    width: 200px;
+    line-height: normal;
+    background-color: #ccc;
+    top: 80px;
+    left: -50%;
+    opacity: 1;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: all .3s;
+    opacity: 0;
+    color: #000;
+    z-index: 10;
+}
+.nav .dropmenu a{
+    display: block;
+    color: #000;
+    padding: 15px;
+}
+.nav .dropmenu a:hover{
+    background-color: #0B2239;
+    color: #FFF;
+    opacity: 1;
+}
+
+.nav .droplink:hover .dropmenu{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.sub_nav{
+    width: 100%;
+    background-color: #E6E8EC;
+}
+.sub_nav .container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.sub_nav li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.sub_nav li a{
+    color: #0B2239;
+    opacity: .5;
+    transition: opacity .3s;
+}
+.sub_nav li a:hover, .sub_nav li a.active{
+    opacity: 1;
+}
+.header_wrapper{
+    padding-bottom: 50px
+}
+.header_wrapper .imp_box{
+    width: 196px;
+    height: 196px;
+    padding: 15px;
+    background-color: #D2CAEF;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px
+}
+
+.header_wrapper .type_title{
+    color: #0B2239;
+    font-weight: 300;
+}
+
+.header_wrapper .adm_box{
+    height: 150px;
+    padding: 15px;
+    background-color: #E6E8EC;
+    border-radius: 10px;
+}
+
+.tick_box{
+    height: 150px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.tick_box.y{
+    background-color: #FDE14D
+}
+.tick_box.r{
+    background-color: #FFA370
+}
+.tick_box.g{
+    background-color: #9AFF8A
+}
+
+/*utilisateurs page style*/
+.filtre{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+}
+.filtre form{
+    flex: 1;
+}
+.filtre form input[type="text"]{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #9b9b9b;
+}
+.filtre form select{
+    padding: 10px;
+}
+.filtre form input[type="submit"]{
+    padding: 10px;
+    background-color: #444053;
+    color: #FFF;
+    outline: none;
+    border: 0;
+}
+
+.ajout{
+    padding: 7px 20px;
+    border-radius: 40px;
+    width: 230px;
+    background-color: #4AF42E;
+    color: #FFF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.ajout span{
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.utilisateurs{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+/*ajout utilisateur page style*/
+.ajout_utl_container{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+}
+.select_list_menu{
+    background-color: #4AF42E;
+    color: #0B2239;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    list-style: none;
+}
+.select_list_menu li{
+    line-height: 60px;
+    flex: 1;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity .3s;
+    padding: 0 10px;
+    background-color: #568f4e;
+    color: #FFF;
+}
+.select_list_menu li:hover, .select_list_menu li.active{
+    opacity: 1;
+}
+
+/*tickets pages*/
+table img{
+    width: 24px;
+    display: inline-block;
+    margin-right: 5px;
+}
+#add{
+    display: inline-block;
+    margin-left: 5px
+}
+#add img{
+    display: inline-block;
+    width: 18px
+}
+.info{
+    width: 18px;
+    display: inline-block;
+    cursor: pointer
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block
+}
+#message{
+    position: fixed;
+    width: 400px;
+    right: 10px;
+    bottom: 10px;
+}

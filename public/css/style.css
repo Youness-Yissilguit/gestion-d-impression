@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover{
+text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+nav .container{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: opacity .3s;
+}
+nav a:hover{
+    color: #fff;
+    opacity:  .8
+}
+nav a span{
+    margin-left: 5px;
+}
+
+.bg_vector{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+header{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+header .content h1{
+    font-size: 48px;
+    color: #0B2239;
+    font-family: 'Staatliches', cursive;
+}
+header .content p{
+    color: #555555;
+    font-size: 22px;
+    margin: 20px 0 25px;
+}
+header .content a{
+    display: block;
+    font-size: 22px;
+    color: #4AF42E;
+    width: 200px;
+    text-align: center;
+    padding: 15px; 
+    border: 2px solid #444053
+}
+
+/*login page*/
+.logo_container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_container{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_container form{
+    width: 400px;
+    height: 400px;
+    background-color: #3F3D56;
+    border-radius: 20px;
+    overflow: visible;
+    padding: 0 40px;
+}
+.form_container form .log_user{
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin-top: -70px;
+    background-color: #1A182B
+}
+.form_container form .log_user img{
+    display: block;
+    width: 100%;
+}
+
+.form_container form .input_grp{
+    margin-top: 20px
+}
+.form_container form .input_grp label{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px
+}
+.form_container form .input_grp input{
+    display: block;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 10px
+}
+
+.form_container form input[type="submit"]{
+    display: block;
+    width: 100%;
+    background-color: #4AF42E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    margin-top: 20px
+}
